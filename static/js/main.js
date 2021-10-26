@@ -1,26 +1,16 @@
 $(document).ready(function () {
-    document.getElementById('nessie').onclick = function () {
-        document.getElementById('nessie-modal').style.display = "block";
-    }
+    var tracks = document.getElementsByClassName('track');
 
-    document.getElementById('boatsquatch').onclick = function () {
-        document.getElementById('boatsquatch-modal').style.display = "block";
-    }
-
-    document.getElementById('krakenlake').onclick = function () {
-        document.getElementById('krakenlake-modal').style.display = "block";
-    }
-
-    document.getElementById('mothman').onclick = function () {
-        document.getElementById('mothman-modal').style.display = "block";
-    }
-
-    document.getElementById('yeti').onclick = function () {
-        document.getElementById('yeti-modal').style.display = "block";
-    }
-
-    document.getElementById('ram').onclick = function () {
-        document.getElementById('ram-modal').style.display = "block";
+    for (var i = 0; i < tracks.length; i++) {
+        tracks[i].onclick = function () {
+            if (window.innerWidth > 993) {
+                var id = this.id + '-modal';
+                document.getElementById(id).style.display = "block";
+            } else {
+                this.classList.toggle('focus');
+                this.lastElementChild.classList.toggle('visible');
+            }
+        }
     }
 
     document.getElementById('mobile-get-involved').onclick = function () {
@@ -30,7 +20,6 @@ $(document).ready(function () {
     document.getElementById('get-involved').onclick = function () {
         document.getElementById('get-involved-modal').style.display = "block";
     }
-
 
     $('.close').on('click', function () {
         $(this).closest('.modal').css("display", "none");
@@ -47,7 +36,7 @@ $(document).ready(function () {
             var $faq = $('<div>');
             var $header = $('<h2>')
 
-            $header.append($('<img>', { "src": "static/assets/images/art/lantern.svg" }));
+            $header.append($('<img>', { "src": "static/assets/images/art/lantern.svg", "alt": "Lantern" }));
             $header.append(question['question']);
             $faq.append($header);
             $faq.append(
@@ -60,7 +49,7 @@ $(document).ready(function () {
 
     $.getJSON("/static/assets/schedule.json", function (data) {
 
-        var $header = $('<div>', { "class": "sch-row" });
+        var $header = $('<div>');
         var $tables = $('<div>', { "style": "position: relative;" });
 
         var i = 0;
@@ -70,14 +59,15 @@ $(document).ready(function () {
                 $('<button>', { "class": (i == 0 ? "day-selector active" : "day-selector"), "id": "day" + i })
                     .text(date['date'])
                     .on('click', function () {
-                        if (!$(this).hasClass('active')) {
-                            $('.day-selector').each(function () {
-                                $(this).toggleClass('active');
-                            });
-                            $('table').each(function () {
-                                $(this).toggleClass('active');
-                            });
-                        }
+                        $('.day-selector').each(function () {
+                            $(this).removeClass('active');
+                        }) 
+                        $('table').each(function() {
+                            $(this).removeClass('active');
+                        })
+                        $(this).addClass('active');
+                        let id = $(this).attr('id').slice(-1);
+                        $('#table' + id).addClass('active');
                     })
             );
 
@@ -87,9 +77,9 @@ $(document).ready(function () {
             $table.append(
                 $('<thead>').append(
                     $('<tr>')
-                        .append($('<th>', { "style": "width:17.5%; text-align: left;" }).text('Time'))
+                        .append($('<th>', { "style": "width:17.5%; text-align: left;" }).text('Time (EST)'))
+                        .append($('<th>', { 'style': "width:25%; text-align: left;" }).text('Type'))
                         .append($('<th>', { "style": "width:57.5%; text-align: left;" }).text('Event'))
-                        .append($('<th>', { 'style': "width:25%; text-align: left;" }).text('Location'))
                 )
             );
 
@@ -99,8 +89,8 @@ $(document).ready(function () {
                 $schBody.append(
                     $('<tr>', { "class": (j++ % 2 == 0 ? "table-row-even" : "table-row-odd") })
                         .append($('<td>').html(element['time']))
+                        .append($('<td>').html(element['type']))
                         .append($('<td>').html(element['event']))
-                        .append($('<td>').html(element['location']))
                 )
             });
 

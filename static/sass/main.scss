@@ -94,13 +94,11 @@ body {
 
         p {
             text-align: center;
-            // position: relative;
-            // top: 20px;
         }
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 993px) {
     .modal {
         padding-top: 25px;
         z-index: 1001;
@@ -179,12 +177,15 @@ h1 {
     }
 }
 
+p {
+    font-size: 20px;
+}
+
 a {
     color: red;
 }
 
 .section {
-    font-size: 1.3em;
     padding: 35px 0px 5px 0px;
 }
 
@@ -245,7 +246,7 @@ a {
     }
 
     .banner-info {
-        height: fit-content;
+        height: max-content;
         width: 80%;
         margin: auto;
         position: absolute;
@@ -262,11 +263,15 @@ a {
             background-color: $nav-emphasis;
             color: white;
             font-weight: bold;
-            width: fit-content;
+            width: max-content;
             padding: 5px 10px;
             margin: 10px auto;
             border-radius: 5px;
             font-size: 3vw;
+
+            &:last-child {
+                margin-bottom: 5vw;
+            }
         }
 
         .tagline {
@@ -302,7 +307,7 @@ a {
     }
 
     .banner-info {
-        height: fit-content;
+        height: max-content;
         width: 80%;
         margin: auto;
         position: absolute;
@@ -335,6 +340,28 @@ a {
 @media only screen and (max-width: 993px) {
     .hide-on-med-and-down {
         display: none !important;
+    }
+}
+
+.live-button {
+    margin-top: 5px;
+    border-radius: 10px;
+    transition: transform 0.15s;
+    background-color: $med-blue;
+    padding: 1vw;
+    font-family: "Quicksand";
+    font-size: 4.5vw;
+
+    a {
+        color: $b-cream;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    &:hover {
+        transform: scale(1.05);
+        -webkit-transform: scale(1.05);
+        transition: transform 0.3s;
     }
 }
 
@@ -439,6 +466,10 @@ nav {
     p {
         margin-bottom: 0px;
     }
+
+    @media only screen and (max-width: 993px) and (orientation: landscape) {
+        padding-top: 12.5vw;
+    }
 }
 
 .tracks {
@@ -450,59 +481,67 @@ nav {
 
         &.wrapper {
             position: relative;
-            height: fit-content;
-            height: min-content;
-            width: fit-content;
-            width: min-content;
+            height: max-content;
+            width: max-content;
             margin: 0 auto;
-        }
-
-        @media only screen and (max-width: 993px) {
-            &.wrapper {
-                transform: scale(1.5);
-                -webkit-transform: scale(1.5);
-                margin-top: 7.5vw;
-                margin-bottom: 6vw;
-            }
-        }
-
-        @media only screen and (max-width: 600px) {
-            &.wrapper {
-                transform: scale(1.65);
-                -webkit-transform: scale(1.65);
-                margin-top: 9vw;
-                margin-bottom: 7vw;
-            }
         }
 
         &.track {
             position: absolute;
             cursor: pointer;
             transition: all ease-out 0.5s;
-            width: fit-content;
 
-            &:hover {
+            h2 {
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 1.1vw;
+                max-width: 10vw;
+                margin: 0 auto;
+            }
+
+            @media only screen and (max-width: 993px) {
+                display: block;
+                position: relative;
+                margin: 5vw auto;
+                width: 80vw;
+
+                img {
+                    height: 30vw;
+                }
+
+                h2 {
+                    font-size: 5vw;
+                    max-width: inherit;
+                }
+            }
+
+            @media only screen and (min-width: 993px) {
+                &:hover {
+                    transform: scale(1.1);
+                    -webkit-transform: scale(1.1);
+                }
+            }
+
+            p {
+                max-height: 0px;
+                transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+                overflow: hidden;
+                display: none;
+
+                @media only screen and (max-width: 993px) {
+                    display: block;
+                }
+
+                &.visible {
+                    margin-bottom: 50px;
+                    max-height: 350px;
+                    transition: all 0.5s ease-in-out;
+                }
+            }
+
+            &.focus {
                 transform: scale(1.1);
                 -webkit-transform: scale(1.1);
-            }
-        }
-    }
-
-    h2 {
-        text-transform: uppercase;
-        font-weight: bold;
-        font-size: 1.1vw;
-        max-width: 10vw;
-        margin: 0 auto;
-    }
-
-    @media only screen and (max-width: 600px) {
-        h2 {
-            position: relative;
-            bottom: 4px;
-
-            @supports (-webkit-touch-callout: none) {
-                max-width: 17.5vw;
             }
         }
     }
@@ -513,85 +552,68 @@ nav {
         margin: 0 auto;
     }
 
-    #nessie {
-        left: 10.5%;
-        top: 14.5%;
+    @media only screen and (min-width: 993px) {
+        #nessie {
+            left: 10.5%;
+            top: 14.5%;
 
-        @supports (-webkit-touch-callout: none) {
+            img {
+                height: 4.5vw;
+            }
+        }
+
+        #boatsquatch {
+            top: 48%;
             left: 7%;
-            top: 10%;
+
+            img {
+                height: 5.5vw;
+            }
+        }
+
+        #krakenlake {
+            left: 28.8%;
+            top: 28.5%;
+
+            img {
+                height: 11.1vw;
+            }
 
             h2 {
-                max-width: 12.5vw;
+                position: relative;
+                top: -3.5vw;
+
+                @media only screen and (max-width: 993px) {
+                    top: 0;
+                }
             }
         }
 
-        img {
-            height: 4.5vw;
-        }
-    }
+        #mothman {
+            left: 50%;
+            top: 9.5%;
 
-    #boatsquatch {
-        top: 48%;
-        left: 7%;
-
-        img {
-            height: 5.5vw;
-        }
-    }
-
-    #krakenlake {
-        left: 28.8%;
-        top: 28.5%;
-
-        img {
-            height: 11.1vw;
-        }
-
-        h2 {
-            position: relative;
-            top: -3.5vw;
-
-            @supports (-webkit-touch-callout: none) {
-                top: -4.8vw;
-                left: -0.5vw;
+            img {
+                height: 7vw;
             }
         }
-    }
 
-    #mothman {
-        left: 50%;
-        top: 9.5%;
+        #yeti {
+            left: 76%;
+            top: 9.5%;
 
-        @supports (-webkit-touch-callout: none) {
-            left: 47%;
+            img {
+                height: 8vw;
+            }
         }
 
-        img {
-            height: 7vw;
-        }
-    }
+        #ram {
+            left: 75%;
+            top: 60%;
 
-    #yeti {
-        left: 76%;
-        top: 9.5%;
-
-        @supports (-webkit-touch-callout: none) {
-            left: 70%;
-            top: 8%;
-        }
-
-        img {
-            height: 8vw;
-        }
-    }
-
-    #ram {
-        left: 75%;
-        top: 60%;
-
-        img {
-            height: 10.5vw;
+            img {
+                height: 10.5vw;
+            }
         }
     }
 }
@@ -634,6 +656,8 @@ h3 {
 }
 
 table {
+    font-size: 18px;
+    width: 100%;
     border-collapse: collapse;
     min-width: 100%;
     max-width: 100%;
@@ -670,17 +694,21 @@ th {
 }
 
 .day-selector {
+    font-family: "Quicksand";
     cursor: pointer;
-    flex: 0 1 50%;
-    -webkit-flex: 0 0 50%;
+    width: 33.3%;
     text-align: center;
     background-color: $schedule-button;
     border: 3px solid $schedule-button-active;
     color: $schedule-dark-text;
     line-height: 1.5em;
-    font-size: 4vh;
+    font-size: 2.5vw;
     margin-top: 10px;
     margin-bottom: 25px;
+
+    @media only screen and (max-width: 993px) {
+        font-size: 5vw;
+    }
 
     &:first-child {
         border-top-left-radius: 5px;
@@ -705,11 +733,6 @@ th {
         background-color: $schedule-button-active;
         color: $schedule-light-text;
     }
-}
-
-.sch-row {
-    display: flex;
-    display: -webkit-flex;
 }
 
 .faq {
@@ -738,7 +761,8 @@ th {
             display: flex;
             margin-bottom: 10px;
             align-items: center;
-            
+            margin-top: 15px;
+
             @media only screen and (max-width: 993px) {
                 font-size: 2rem;
             }
@@ -746,14 +770,6 @@ th {
             img {
                 height: 40px;
                 margin-right: 20px;
-            }
-        }
-
-        p {
-            font-size: 1.2rem;
-
-            @media only screen and (max-width: 993px) {
-                font-size: 1.5rem;
             }
         }
     }
@@ -791,31 +807,27 @@ th {
 }
 
 .tier-4 {
-    max-width: 80%;
-    min-width: 280px;
-    max-height: 250px;
+    width: 80%;
+    min-width: 350px;
 }
 
 .tier-3 {
-    max-width: 50%;
-    min-width: 240px;
-    max-height: 180px;
+    width: 40%;
+    min-width: 260px;
 }
 
 .tier-2 {
-    max-width: 30%;
-    min-width: 240px;
-    max-height: 140px;
+    width: 30%;
+    min-width: 180px;
 }
 
 .tier-1 {
-    max-width: 17.5%;
-    min-width: 180px;
-    max-height: 100px;
+    width: 20%;
+    min-width: 125px;
 }
 
 .sponsor-row {
-    margin-bottom: 0;
+    margin-bottom: 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -832,6 +844,7 @@ footer {
     height: 10vh;
     background: $footer-background;
     color: $footer-text;
+    font-size: 1.3rem;
 
     @media only screen and (max-width: 600px) {
         height: 15vh;

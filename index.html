@@ -14,14 +14,13 @@
     <meta property="og:image" content="https://hacknc.com/static/assets/images/newbanner.png" />
 
     <title>HackNC 2020</title>
-    <link rel="shortcut icon" type="image/png" type="image/png" href="static/assets/images/art/tent.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="static/assets/images/favicon-32x32.png">
     <link href="https://fonts.googleapis.com/css?family=Arvo|Lobster+Two|Montserrat|Pacifico|Philosopher|Quicksand"
         rel="stylesheet">
     <script src="https://use.fontawesome.com/28dbc0dc5a.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js"
         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="static/css/main.css">
-    <script src="static/js/main.js"></script>
 </head>
 
 <body>
@@ -33,41 +32,13 @@
             alt="Major League Hacking 2021 Hackathon Season" style="width:100%"></a>
     <main id="content container">
 
-        <!-- Volunter/Mentor: Will we need this for online hackathon?
-        <div id='volunteer-mentor' class='modal'>
-            <div class='modal-content light'>
-                <h4>Which one would you like to do?</h4>
-                <div class="center">
-                    <a class='btn-large form-btn' href="https://hacknc.typeform.com/to/TVuss0">Volunteer!</a>
-                    <a class='btn-large form-btn' href="https://hacknc.typeform.com/to/is7T68">
-                        Mentor!</a>
-                    <p>Interested in learning more about being a mentor? Check out
-                        our <a href="becoming-a-mentor.html">mentoring at a hackathon
-                            101</a></p>
-                </div>
-            </div>
-        </div> -->
-
-        <!--  Sponsor Modal: Thoughts on changing this to a button below sponsor images?   
-        <div id='sponsor-btn' class='modal'>
-            <div class='modal-content light'>
-                <h4>Thank you for your interest!</h4>
-                <p>Our sponsor packet for HackNC 2019 is available here:
-                    <a href="static/assets/resources/sponsor_packet.pdf">
-                        sponsor information packet
-                    </a></p>
-
-                <p>If you are interested in sponsoring us for next year, please send an email to <a
-                        class="sponsor-email" href="mailto:sponsorship@hacknc.com">sponsorship@hacknc.com</a></p>
-            </div>
-        </div> -->
-
         <div id="nessie-modal" class="modal">
             <div class="modal-content">
                 <span class="close">&times;</span>
                 <h2>Accessibility & Inclusivity</h2>
                 <p>As technology becomes more and more intertwined with daily life, we must ensure that technology is
-                    acessible and inclusive for everyone regardless of race, gender, age, or ability. Hackers who choose
+                    accessible and inclusive for everyone regardless of race, gender, age, or ability. Hackers who
+                    choose
                     this track will aim to make tech more accessible and equitable.</p>
             </div>
         </div>
@@ -134,17 +105,6 @@
             </div>
         </div>
 
-        <!-- Mobile Navigation Bar: Decide if this is necessary and if so fix it -->
-        <!-- <ul class="sidenav" id="mobile-demo">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#tracks">Tracks</a></li>
-            <li><a href="#schedule">Schedule</a></li>
-            <li><a href="#faq">FAQ</a></li>
-            <li><a href="#sponsors">Sponsors</a></li>
-            <li><a class="modal-trigger" href="#volunteer-mentor">Volunteer/Mentor</a></li>
-        </ul> -->
-
         <!-- Logo and header -->
         <div class="splash">
             <a class="nav-anchor" id="home"></a>
@@ -152,6 +112,7 @@
                 <div class="banner-info">
                     <h2 class="tagline">Uncovering the mysteries of technology</h2>
                     <h2 class="date">October 16-18, 2020</h2>
+                    <button class="live-button"><a href="live">→ HackNC Live</a></button>
                     <a href="https://hacknc.typeform.com/to/DT2Gikns" target="_blank" class="apply">APPLY</a>
                     <a id="mobile-get-involved" class="apply">GET INVOLVED</a>
                 </div>
@@ -195,30 +156,58 @@
             <div class="container">
                 <h1>Tracks</h1>
                 <div class="wrapper">
-                    <img alt="treasure map graphic" class="background" src="static/assets/images/art/mapsblank.svg">
+                    <img alt="treasure map" class="background hide-on-med-and-down"
+                        src="static/assets/images/art/mapsblank.svg">
                     <div id="nessie" class="track">
-                        <img src="static/assets/images/art/nessie.svg">
+                        <img alt="Lochness Monster" src="static/assets/images/art/nessie.svg">
                         <h2>Accessibility & Inclusivity</h2>
+                        <p>As technology becomes more and more intertwined with daily life, we must ensure that
+                            technology is
+                            accessible and inclusive for everyone regardless of race, gender, age, or ability. Hackers
+                            who choose
+                            this track will aim to make tech more accessible and equitable.</p>
                     </div>
                     <div id="boatsquatch" class="track">
-                        <img src="static/assets/images/art/boatquatch.svg">
+                        <img alt="Sasquatch in a boat" src="static/assets/images/art/boatquatch.svg">
                         <h2>Education</h2>
+                        <p>We invite hackers to rise to the challenge of virtual education with innovative solutions to
+                            the
+                            challenges of remote learning. Hackers who choose this track will work to increase
+                            educational
+                            opportunities for students of all abilities and backgrounds.</p>
                     </div>
                     <div id="krakenlake" class="track">
-                        <img src="static/assets/images/art/krakenlake.svg">
+                        <img alt="Kraken in a lake" src="static/assets/images/art/krakenlake.svg">
                         <h2>Healthcare</h2>
+                        <p>The current COVID-19 pandemic has highlighted pre-existing healthcare inequities, both
+                            globally and
+                            at home. Hackers who choose this track will leverage modern technology to improve healthcare
+                            access
+                            and treatment.</p>
                     </div>
                     <div id="mothman" class="track">
-                        <img src="static/assets/images/art/mothman.svg">
+                        <img alt="Mothman" src="static/assets/images/art/mothman.svg">
                         <h2>Sustainability</h2>
+                        <p>As other crises surge, the threat of climate change looms in the background. Hackers who
+                            choose this
+                            track will work on environmental solutions for local and global communities.</p>
                     </div>
                     <div id="yeti" class="track">
-                        <img src="static/assets/images/art/yeti.svg">
+                        <img alt="Yeti" src="static/assets/images/art/yeti.svg">
                         <h2>Student Orgs, Nonprofits, and Open Source</h2>
+                        <p>One of the primary goals of HackNC is teaching hackers to apply their skills in real-world
+                            situations. This year, we're inviting student organizations, nonprofits, and open-source
+                            software
+                            groups to pitch projects with tangible impact. Hackers who choose this track will be able to
+                            tackle
+                            these projects and may even continue working with the client afterwards.</p>
                     </div>
                     <div id="ram" class="track">
-                        <img src="static/assets/images/art/ram.svg">
+                        <img alt="UNC ram" src="static/assets/images/art/ram.svg">
                         <h2>General</h2>
+                        <p>Not all problems and innovations can fit neatly into specific boxes, so hackers who choose
+                            this track
+                            will be able to submit other unique hacks. </p>
                     </div>
                 </div>
             </div>
@@ -235,173 +224,12 @@
             </div>
         </div>
 
-        <!-- FAQ: Currently just a proof of concept, see faq.json -->
+        <!-- FAQ -->
         <div class="section faq">
             <a class="nav-anchor" id="faq"></a>
             <div class="container">
                 <h1>Any Questions?</h1>
                 <div id="faq-container"></div>
-                <!-- <div class="center row">
-                    <div class="col s12 m6 l6">
-                        <ul class="collapsible">
-                            <li>
-                                <div class="collapsible-header">
-                                    <h6>What is a hackathon?</h6>
-                                </div>
-                                <div class="collapsible-body">
-                                    <p>A hackathon is a weekend of fun and learning. You'll become a better programmer,
-                                        meet awesome people,
-                                        and make cool stuff. There will also be opportunities to win cool prizes and
-                                        network with our sponsors.</p>
-                                </div>
-                            </li>
-                        </ul>
-                        <ul class="collapsible">
-                            <li>
-                                <div class="collapsible-header">
-                                    <h6>What if I'm in high school?</h6>
-                                </div>
-                                <div class="collapsible-body">
-                                    <p>As long as you'll be 18 by the start of the event, we would love for you to come
-                                        to HackNC. Unfortunately
-                                        (because of the incredible amount of paperwork involved) we won't be able to
-                                        accept anyone under the
-                                        age of 18.</p>
-                                </div>
-                            </li>
-                        </ul>
-                        <ul class="collapsible">
-                            <li>
-                                <div class="collapsible-header">
-                                    <h6>Can I hack?</h6>
-                                </div>
-                                <div class="collapsible-body">
-                                    <p>High schoolers over 18, undergraduates, and graduate students are welcome to
-                                        participate as hackers. Professionals
-                                        should check out mentorship.</p>
-                                </div>
-                            </li>
-                        </ul>
-                        <ul class="collapsible">
-                            <li>
-                                <div class="collapsible-header">
-                                    <h6>How do I get in?</h6>
-                                </div>
-                                <div class="collapsible-body">
-                                    <p>Anyone can attend HackNC. Our admission criteria doesn't include your level of
-                                        experience. <a href="https://hacknc.typeform.com/to/nagLPb">Go here to register
-                                            now!</a></p>
-                                </div>
-                            </li>
-                        </ul>
-                        <ul class="collapsible">
-                            <li>
-                                <div class="collapsible-header">
-                                    <h6>Got any hardware?</h6>
-                                </div>
-                                <div class="collapsible-body">
-                                    <p>You bet! MLH is providing the <a href="https://mlh.io/hardware-lab"></a>full
-                                        hardware lab</a>. In addition,
-                                        we will have soldering kits and other assorted components, Arduinos, Raspberry
-                                        Pis, sensors, and more
-                                        stickers than you can wear on four limbs...</p>
-                                </div>
-                            </li>
-                        </ul>
-                        <ul class="collapsible">
-                            <li>
-                                <div class="collapsible-header">
-                                    <h6>How do teams work?</h6>
-                                </div>
-                                <div class="collapsible-body">
-                                    <p>Teams can be organized prior to HackNC and during the event itself. At HackNC, we
-                                        will host team building and pitch events before hacking begins. We don’t hold a
-                                        strict limit on your team size, but we strongly recommend around 3-4 members.
-                                        Prizes will be limited to a maximum of 4 members. A gentle reminder that prior
-                                        work cannot be submitted at HackNC; this includes past projects and any team
-                                        work done prior to the official start of hacking.</p>
-                                </div>
-                            </li>
-                        </ul>
-                        <ul class="collapsible">
-                            <li>
-                                <div class="collapsible-header">
-                                    <h6>How can I mentor?</h6>
-                                </div>
-                                <div class="collapsible-body">
-                                    <p>Professionals are welcome to join as mentors, sponsors, or lecturers. If you want
-                                        to come as a mentor,
-                                        contact us!</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col s12 m6 l6">
-                        <ul class="collapsible">
-                            <li>
-                                <div class="collapsible-header">
-                                    <h6>Will I fit in?</h6>
-                                </div>
-                                <div class="collapsible-body">
-                                    <p>Definitely! HackNC and the UNC Computer Science Department are committed to
-                                        making computer science a
-                                        more diverse field. Inclusiveness is a top priority for us, and we've been
-                                        beginner-friendly from the
-                                        start.
-                                    </p>
-                                </div>
-                            </li>
-                        </ul>
-                        <ul class="collapsible">
-                            <li>
-                                <div class="collapsible-header">
-                                    <h6>What if I make an application mistake?</h6>
-                                </div>
-                                <div class="collapsible-body">
-                                    <p>If you need to change something in your application, please just submit a new
-                                        application, we only work with the latest version of duplicates. However, if the
-                                        thing you need to change is your name or date of birth, please email
-                                        registration@hacknc.com or hello@hacknc.com.</p>
-                                </div>
-                            </li>
-                        </ul>
-                        <ul class="collapsible">
-                            <li>
-                                <div class="collapsible-header">
-                                    <h6>Can I use old code?</h6>
-                                </div>
-                                <div class="collapsible-body">
-                                    <p>You may use all the publicly available code and APIs that you want, but the code
-                                        you will be judged on
-                                        at the end of the hackathon must be new.</p>
-                                </div>
-                            </li>
-                        </ul>
-                        <ul class="collapsible">
-                            <li>
-                                <div class="collapsible-header">
-                                    <h6>Are there any costs?</h6>
-                                </div>
-                                <div class="collapsible-body">
-                                    <p>Nope! HackNC is absolutely free for all participants. Travel-wise, we will have a
-                                        limited number of reimbursements for
-                                        carpooling; you can find more details down below.
-                                    </p>
-                                </div>
-                            </li>
-                        </ul>
-                        <ul class="collapsible">
-                            <li>
-                                <div class="collapsible-header">
-                                    <h6>How can I volunteer?</h6>
-                                </div>
-                                <div class="collapsible-body">
-                                    <p>Please sign up <a href="https://hacknc.typeform.com/to/TVuss0">here</a> to be a
-                                        volunteer! Thanks!</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div> -->
             </div>
             <div id="faq-footer"></div>
         </div>
@@ -414,61 +242,114 @@
                 <!-- tier 4 -->
                 <div class="sponsor-row">
                     <a class="tier-4" target="_blank" href='https://www.credit-suisse.com/'>
-                        <img class='sponsor-image' src='static/assets/images/sponsors/creditsuisse.png'></a>
+                        <img alt="Credit Suisse logo" class='sponsor-image'
+                            src='static/assets/images/sponsors/creditsuisse.png'></a>
                 </div>
-                
+
                 <!-- tier 3 -->
                 <div class="sponsor-row">
                     <a class="tier-3" target="_blank" href='https://campus.capitalone.com/'>
-                        <img class='sponsor-image' src='static/assets/images/sponsors/capitalone.png'></a>
+                        <img alt="Capital One logo" class='sponsor-image'
+                            src='static/assets/images/sponsors/capitalone.png'></a>
                 </div>
                 <div class="sponsor-row">
                     <a class="tier-3" target="_blank" href='https://www.genesys.com/'>
-                        <img class='sponsor-image' src='static/assets/images/sponsors/genesys.png'></a>
+                        <img alt="Genesys logo" class='sponsor-image'
+                            src='static/assets/images/sponsors/genesys.png'></a>
                 </div>
                 <div class="sponsor-row">
                     <a class="tier-3" target="_blank" href='https://www.deere.com/'>
-                        <img class='sponsor-image' src='static/assets/images/sponsors/johndeere.png'></a>
+                        <img alt="John Deere logo" class='sponsor-image'
+                            src='static/assets/images/sponsors/johndeere.png'></a>
                 </div>
                 <div class="sponsor-row">
                     <a class="tier-3" target="_blank" href='https://www.postman.com/'>
-                        <img class='sponsor-image' src='static/assets/images/sponsors/postman.png'></a>
+                        <img alt="Postman logo" class='sponsor-image'
+                            src='static/assets/images/sponsors/postman.png'></a>
+                </div>
+                <div class="sponsor-row">
+                    <a class="tier-3" target="_blank" href='https://developer.squareup.com/us/en'>
+                        <img alt="Square logo" class='sponsor-image' src='static/assets/images/sponsors/square.png'></a>
                 </div>
 
                 <!-- tier 2 -->
                 <div class="sponsor-row">
                     <a class="tier-2" target="_blank" href='https://www.captechconsulting.com/'>
-                        <img class='sponsor-image' src='static/assets/images/sponsors/captech.png'></a>
+                        <img alt="CapTech logo" class='sponsor-image'
+                            src='static/assets/images/sponsors/captech.png'></a>
                     <a class="tier-2" target="_blank" href='https://www.iqvia.com/'>
-                        <img class='sponsor-image' src='static/assets/images/sponsors/iqvia.png'></a>
+                        <img alt="IQVIA logo" class='sponsor-image' src='static/assets/images/sponsors/iqvia.png'></a>
                 </div>
                 <div class="sponsor-row">
                     <a class="tier-2" target="_blank" href='https://www.optum.com/'>
-                        <img class='sponsor-image' src='static/assets/images/sponsors/optum.png'></a>
+                        <img alt="Optum logo" class='sponsor-image' src='static/assets/images/sponsors/optum.png'></a>
                     <a class="tier-2" target="_blank" href='https://www.costar.com/'>
-                        <img class='sponsor-image' src='static/assets/images/sponsors/costar.png'></a>
+                        <img alt="CoStar logo" class='sponsor-image' src='static/assets/images/sponsors/costar.png'></a>
                 </div>
                 <div class="sponsor-row">
                     <a class="tier-2" target="_blank" href='https://www.linode.com/'>
-                        <img class='sponsor-image' src='static/assets/images/sponsors/linode.png'></a>
+                        <img alt="Linode logo" class='sponsor-image' src='static/assets/images/sponsors/linode.png'></a>
+                    <a class="tier-2" target="_blank" href='https://www.millenniumadvisors.com/'>
+                        <img alt="millenium advisors logo" class='sponsor-image'
+                            src='static/assets/images/sponsors/millenniumadvisors.png'></a>
                 </div>
+                <div class="sponsor-row">
+                    <a class="tier-2" target="_blank" href='https://vanguard.com/'>
+                        <img alt="vanguard logo" class='sponsor-image'
+                            src='static/assets/images/sponsors/vanguard.png'></a>
+                    <a class="tier-2" target="_blank" href='https://www.db.com/company/index.htm'>
+                        <img alt="Deutsche bank logo" class='sponsor-image'
+                            src='static/assets/images/sponsors/deutsche_bank.jpg'></a>
+                </div>
+
 
                 <!-- tier 1 -->
                 <div class="sponsor-row">
                     <a class="tier-1" target="_blank" href='https://balsamiq.com/'>
-                        <img class='sponsor-image' src='static/assets/images/sponsors/balsamiq.png'></a>
+                        <img alt="Balsamiq logo" class='sponsor-image'
+                            src='static/assets/images/sponsors/balsamiq.png'></a>
                     <a class="tier-1" target="_blank" href='https://www.wolfram.com/'>
-                        <img class='sponsor-image' src='static/assets/images/sponsors/wolfram.png'></a>
+                        <img alt="Wolfram logo" class='sponsor-image'
+                            src='static/assets/images/sponsors/wolfram.png'></a>
                 </div>
                 <div class="sponsor-row">
                     <a class="tier-1" target="_blank" href='https://www.digitalocean.com/'>
-                        <img class='sponsor-image' src='static/assets/images/sponsors/digitalocean.png'></a>
+                        <img alt="Digital Ocean logo" class='sponsor-image'
+                            src='static/assets/images/sponsors/digitalocean.png'></a>
+                    <a class="tier-1" target="_blank" href='https://www.slalombuild.com/'>
+                        <img alt="Slalom build logo" class='sponsor-image'
+                            src='static/assets/images/sponsors/slalom_build.png'></a>
+                </div>
+                <div class="sponsor-row">
+                    <a class="tier-1" target="_blank" href='https://www.here.com/'>
+                        <img alt="Digital Ocean logo" class='sponsor-image'
+                            src='static/assets/images/sponsors/here.png'></a>
+                    <a class="tier-1" target="_blank" href='https://cloud.google.com/'>
+                        <img alt="Slalom build logo" class='sponsor-image'
+                            src='static/assets/images/sponsors/google_cloud.png'></a>
+                </div>
+                <div class="sponsor-row">
+                    <a class="tier-1" target="_blank" href='https://nimbella.com/'>
+                        <img alt="Digital Ocean logo" class='sponsor-image'
+                            src='static/assets/images/sponsors/nimbella.png'></a>
+                    <a class="tier-1" target="_blank" href='https://www.mongodb.com/'>
+                        <img alt="Slalom build logo" class='sponsor-image'
+                            src='static/assets/images/sponsors/mongodb.png'></a>
+                </div>
+                <div class="sponsor-row">
+                    <a class="tier-1" target="_blank" href='https://www.joinglimpse.com/'>
+                        <img alt="Glimpse logo" class='sponsor-image'
+                            src='static/assets/images/sponsors/glimpse.png'></a>
+                    <a class="tier-1" target="_blank" href='http://hackp.ac/mlh-stickermule-hackathons'>
+                        <img alt="Sticker Mule logo" class='sponsor-image'
+                            src='static/assets/images/sponsors/stickermule.png'></a>
                 </div>
 
                 <!-- unc affiliates -->
                 <div class="sponsor-row">
                     <a class="tier-1" target="_blank" href='https://cs.unc.edu/'>
-                        <img class='sponsor-image' src='static/assets/images/sponsors/unc-cs.png'></a>
+                        <img alt="UNC Computer Science department logo" class='sponsor-image'
+                            src='static/assets/images/sponsors/unc-cs.png'></a>
                 </div>
 
                 <p class="center">Looking to sponsor HackNC 2020? Email us at <a class="sponsor-email"
@@ -481,19 +362,19 @@
     <!-- Footer -->
     <footer class="section">
         <div class="container center">
-            <a target="_blank" href="mailto:hello@hacknc.com">
+            <a aria-label="HackNC email" target="_blank" href="mailto:hello@hacknc.com">
                 <i class="fa fa-envelope-square fa-2x"></i></a>
 
-            <a target="_blank" href="https://www.facebook.com/thehacknc/">
+            <a aria-label="HackNC facebook" target="_blank" href="https://www.facebook.com/thehacknc/">
                 <i class="fa fa-facebook-square fa-2x"></i></a>
 
-            <a target="_blank" href="https://twitter.com/thehacknc">
+            <a aria-label="HackNC twitter" target="_blank" href="https://twitter.com/thehacknc">
                 <i class="fa fa-twitter-square fa-2x"></i></a>
 
-            <a target="_blank" href="https://www.instagram.com/thehacknc/">
+            <a aria-label="HackNC instagram" target="_blank" href="https://www.instagram.com/thehacknc/">
                 <i class="fa fa-instagram fa-2x"></i></a>
 
-            <a target="_blank" href="https://www.snapchat.com/add/hacknc">
+            <a aria-label="HackNC snapchat" target="_blank" href="https://www.snapchat.com/add/hacknc">
                 <i class="fa fa-snapchat-square fa-2x"></i></a>
             <br>
             <u>© HackNC 2020 — </u><a class="text" href="static/assets/resources/mlh-code-of-conduct.pdf">MLH Code
@@ -501,6 +382,7 @@
                 Conduct</a>
         </div>
     </footer>
+    <script src="static/js/main.js"></script>
 </body>
 
 </html>

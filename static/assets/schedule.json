@@ -1,141 +1,184 @@
 [
     {
-        "date": "Saturday, 10/12",
+        "date": "Friday, 10/16",
         "schedule": [
             {
-                "time": "7:00 AM",
-                "event": "Check-in begins for RSVP'd hackers",
-                "location": "Woollen Gym"
+                "time": "4:00pm",
+                "end": " - 8:00pm",
+                "type": "Workshop",
+                "event": "Workshops (led by HackNC/sponsors)",
+                "location": "<a href='workshop-schedule'>Workshop Schedule</a>"
             },
             {
-                "time": "7:30 AM",
-                "event": "Breakfast",
-                "location": "Woollen Gym"
+                "time": "8:00pm",
+                "end": " - 9:00pm",
+                "type": "Social",
+                "event": "Team Matching #1 (Glimpse)",
+                "location": "<a href='https://app.joinglimpse.com/room?key=A15D41' target='_blank'>Glimpse</a><br>Discord: #searching-for-teammates"
             },
             {
-                "time": "9:00 AM",
-                "event": "Check-in begins for everyone",
-                "location": "Union"
+                "time": "9:00pm",
+                "end": " - 11:00pm",
+                "type": "Social",
+                "event": "Minecraft Challenge: Can you build the best Cryptid?",
+                "location": "Discord: #minecraft-challenge"
             },
             {
-                "time": "10:00 AM",
-                "event": "Opening ceremony begins",
-                "location": "Union"
-            },
-            {
-                "time": "11:00 AM",
-                "event": "Sponsor Fair",
-                "location": "Woollen Gym"
-            },
-            {
-                "time": "11:00 AM",
-                "event": "Hacking begins!",
-                "location": "-"
-            },
-            {
-                "time": "1:00 PM",
-                "event": "Lunch",
-                "location": "Woollen Gym"
-            },
-            {
-                "time": "2:00 PM",
-                "event": "Workshop: Modern Web Development with Angular by CapTech",
-                "location": "Room 304 @\nWoollen Gym"
-            },
-            {
-                "time": "2:00 PM",
-                "event": "Workshop: Backend Development in Python + How to Pitch Effectively",
-                "location": "Room 303 @\nWoollen Gym"
-            },
-            {
-                "time": "3:15 PM",
-                "event": "Workshop: Healthcare on the Cloud: Introduction to Microservices Architecture by Allscripts",
-                "location": "Room 304 @\nWoollen Gym"
-            },
-            {
-                "time": "3:15 PM",
-                "event": "Workshop: Ask the Tech Recruiter by Macedon Technologies",
-                "location": "Room 303 @\nWoollen Gym"
-            },
-            {
-                "time": "4:15 PM",
-                "event": "Mid-day Snack",
-                "location": "Woollen Gym"
-            },
-            {
-                "time": "4:30 PM",
-                "event": "Workshop: Lambdas by Capital One",
-                "location": "Room 304 @\nWoollen Gym"
-            },
-            {
-                "time": "4:30 PM",
-                "event": "Workshop: Doing Chemistry with Machine Learning by Daniel Korn",
-                "location": "Room 303 @\nWoollen Gym"
-            },
-            {
-                "time": "5:45 PM",
-                "event": "Workshop: Making Sense of Unstructured Text with Python and spaCy by CoStar",
-                "location": "Room 304 @\nWoollen Gym"
-            },
-            {
-                "time": "5:45 PM",
-                "event": "Workshop: An Introduction to User Experience by Credit Suisse",
-                "location": "Room 303 @\nWoollen Gym"
-            },
-            {
-                "time": "7:00 PM",
-                "event": "Dinner",
-                "location": "Woollen Gym"
-            },
-            {
-                "time": "8:00 PM",
-                "event": "Women in Tech Panel",
-                "location": "Room 304 @\nWoollen Gym"
-            },
-            {
-                "time": "9:00 PM",
-                "event": "Boardgames",
-                "location": "Main gym @\nWoollen Gym"
-            },
-            {
-                "time": "10:00 PM",
-                "event": "Free Throw Challenge with Capital One ($50 prize)",
-                "location": "Main gym @\nWoollen Gym"
-            },
-            {
-                "time": "12:00 AM",
-                "event": "Midnight Munchies",
-                "location": "Woollen Gym"
+                "time": "10:00pm",
+                "end": " - 11:00pm",
+                "type": "Social",
+                "event": "Skribbl.io",
+                "location": "Discord: #skribbl"
             }
         ]
     },
     {
-        "date": "Sunday, 10/13",
+        "date": "Saturday, 10/17",
         "schedule": [
             {
-                "time": "7:30 AM",
-                "event": "Breakfast",
-                "location": "Woollen Gym"
+                "time": "9:00am",
+                "end": " - 11:00pm",
+                "type": "General",
+                "event": "Pre-Event Troubleshooting",
+                "location": "Discord: #event-support"
             },
             {
-                "time": "11:00 AM",
-                "event": "Hacking ends",
-                "location": "Woollen Gym"
+                "time": "11:00am",
+                "end": " - 12:00pm",
+                "type": "General",
+                "event": "<b>Opening Ceremony</b>",
+                "location": "Twitch"
             },
             {
-                "time": "11:30 AM",
-                "event": "Judging starts",
-                "location": "Woollen Gym"
+                "time": "12:00pm",
+                "end": " - 3:00pm",
+                "type": "Sponsors",
+                "event": "<b>Sponsor Fair!</b>",
+                "location": "<a target='_blank' href='https://app.brazenconnect.com/a/unc-computer-science-dept/e/A3BwQ'>Brazen</a>"
             },
             {
-                "time": "12:30 PM",
-                "event": "Lunch",
-                "location": "Woollen Gym"
+                "time": "12:00pm",
+                "end": "",
+                "type": "General",
+                "event": "<b>Hacking Begins!</b>",
+                "location": "Right Here!"
             },
             {
-                "time": "1:30 PM",
+                "time": "12:00pm",
+                "end": " - 1:00pm",
+                "type": "Social",
+                "event": "Team Matching #2 (Glimpse)",
+                "location": "<a href='https://app.joinglimpse.com/room?key=A15D41' target='_blank'>Glimpse</a><br>Discord: #searching-for-teammates"
+            },
+            {
+                "time": "1:00pm",
+                "end": " - 10:00pm",
+                "type": "Workshop",
+                "event": "Sponsor Workshops",
+                "location": "<a href='workshop-schedule'>Workshop Schedule</a>"
+            },
+            {
+                "time": "4:00pm",
+                "end": " - 5:00pm",
+                "type": "Panel",
+                "event": "Panel (HackNC): Diversity in Tech",
+                "location": "<a target='_blank_' href='https://youtu.be/ctoAXoyMu-U'>YouTube</a>"
+            },
+            {
+                "time": "5:00pm",
+                "end": " - 7:00pm",
+                "type": "Social",
+                "event": "HackNC Social Hours (Glimpse)",
+                "location": "<a href='https://app.joinglimpse.com/room?key=580A4B' target='_blank'>Glimpse</a>"
+            },
+            {
+                "time": "7:00pm",
+                "end": " - 7:30pm",
+                "type": "General",
+                "event": "MLH: US Air Force CTF Challenge",
+                "location": "TBD"
+            },
+            {
+                "time": "7:30pm",
+                "end": " - 8:00pm",
+                "type": "General",
+                "event": "MLH: Werewolf / Among Us",
+                "location": "TBD"
+            },
+            {
+                "time": "10:00pm",
+                "end": " - 11:00pm",
+                "type": "Social",
+                "event": "Wikirace",
+                "location": "Discord: #wikirace"
+            },
+            {
+                "time": "11:00pm",
+                "end": " - 12:00am",
+                "type": "Social",
+                "event": "Jackbox",
+                "location": "Discord: #jackbox"
+            }
+        ]
+    },
+    {
+        "date": "Sunday, 10/18",
+        "schedule": [
+            {
+                "time": "1:00am",
+                "end": "",
+                "type": "General",
+                "event": "Late Night Check-In",
+                "location": "Twitch"
+            },
+            {
+                "time": "1:00am",
+                "end": " - 2:00am",
+                "type": "Workshop",
+                "event": "Sponsor Workshop",
+                "location": "<a href='workshop-schedule'>Workshop Schedule</a>"
+            },
+            {
+                "time": "12:00pm",
+                "end": "",
+                "type": "General",
+                "event": "<b>Initial Devpost submissions due!</b>",
+                "location": "<a target='_blank' href='https://hacknc2020.devpost.com'>Devpost</a>"
+            },
+            {
+                "time": "1:00pm",
+                "end": "",
+                "type": "General",
+                "event": "<b>Hacking Ends! Final Devpost submissions due!</b>",
+                "location": "<a target='_blank' href='https://hacknc2020.devpost.com'>Devpost</a>"
+            },
+            {
+                "time": "1:00pm",
+                "end": " - 4:30pm",
+                "type": "General",
+                "event": "Judging",
+                "location": "Discord"
+            },
+            {
+                "time": "1:30pm",
+                "end": " - 2:30pm",
+                "type": "Panel",
+                "event": "Panel (HackNC): UNC Alum(na)",
+                "location": "<a href='https://unc.zoom.us/j/95110326604?pwd=NG1CaS9FczIvYmdBbXIvdkUwN2wydz09' target='_blank'>Zoom</a><br>PW: hacknc2020"
+            },
+            {
+                "time": "3:00pm",
+                "end": " - 4:00pm",
+                "type": "Workshop",
+                "event": "Sponsor Workshop",
+                "location": "<a href='workshop-schedule'>Workshop Schedule</a>"
+            },
+            {
+                "time": "5:00pm",
+                "end": " - 6:00pm",
+                "type": "General",
                 "event": "Closing Ceremony",
-                "location": "Hamilton Hall"
+                "location": "Twitch"
             }
         ]
     }

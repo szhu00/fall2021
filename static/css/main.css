@@ -87,7 +87,7 @@ body {
   text-align: center;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 993px) {
   .modal {
     padding-top: 25px;
     z-index: 1001;
@@ -159,12 +159,15 @@ h1 {
     font-size: 10vw;
   }
 }
+p {
+  font-size: 20px;
+}
+
 a {
   color: red;
 }
 
 .section {
-  font-size: 1.3em;
   padding: 35px 0px 5px 0px;
 }
 
@@ -222,7 +225,7 @@ a {
   }
 
   .banner-info {
-    height: fit-content;
+    height: max-content;
     width: 80%;
     margin: auto;
     position: absolute;
@@ -239,11 +242,14 @@ a {
     background-color: #116f9e;
     color: white;
     font-weight: bold;
-    width: fit-content;
+    width: max-content;
     padding: 5px 10px;
     margin: 10px auto;
     border-radius: 5px;
     font-size: 3vw;
+  }
+  .banner-info .apply:last-child {
+    margin-bottom: 5vw;
   }
   .banner-info .tagline {
     font-size: 3vw;
@@ -275,7 +281,7 @@ a {
   }
 
   .banner-info {
-    height: fit-content;
+    height: max-content;
     width: 80%;
     margin: auto;
     position: absolute;
@@ -306,6 +312,26 @@ a {
     display: none !important;
   }
 }
+.live-button {
+  margin-top: 5px;
+  border-radius: 10px;
+  transition: transform 0.15s;
+  background-color: #116f9e;
+  padding: 1vw;
+  font-family: "Quicksand";
+  font-size: 4.5vw;
+}
+.live-button a {
+  color: #F7F2D8;
+  text-decoration: none;
+  font-weight: bold;
+}
+.live-button:hover {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  transition: transform 0.3s;
+}
+
 nav {
   width: 100%;
   height: 64px;
@@ -400,6 +426,11 @@ nav ul a:hover::before {
 .about p {
   margin-bottom: 0px;
 }
+@media only screen and (max-width: 993px) and (orientation: landscape) {
+  .about {
+    padding-top: 12.5vw;
+  }
+}
 
 .tracks {
   background: #F7F2D8;
@@ -410,132 +441,126 @@ nav ul a:hover::before {
 }
 .tracks div.wrapper {
   position: relative;
-  height: fit-content;
-  height: min-content;
-  width: fit-content;
-  width: min-content;
+  height: max-content;
+  width: max-content;
   margin: 0 auto;
-}
-@media only screen and (max-width: 993px) {
-  .tracks div.wrapper {
-    transform: scale(1.5);
-    -webkit-transform: scale(1.5);
-    margin-top: 7.5vw;
-    margin-bottom: 6vw;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .tracks div.wrapper {
-    transform: scale(1.65);
-    -webkit-transform: scale(1.65);
-    margin-top: 9vw;
-    margin-bottom: 7vw;
-  }
 }
 .tracks div.track {
   position: absolute;
   cursor: pointer;
   transition: all ease-out 0.5s;
-  width: fit-content;
 }
-.tracks div.track:hover {
-  transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-}
-.tracks h2 {
+.tracks div.track h2 {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1.1vw;
   max-width: 10vw;
   margin: 0 auto;
 }
-@media only screen and (max-width: 600px) {
-  .tracks h2 {
+@media only screen and (max-width: 993px) {
+  .tracks div.track {
+    display: block;
     position: relative;
-    bottom: 4px;
+    margin: 5vw auto;
+    width: 80vw;
   }
-  @supports (-webkit-touch-callout: none) {
-    .tracks h2 {
-      max-width: 17.5vw;
-    }
+  .tracks div.track img {
+    height: 30vw;
   }
+  .tracks div.track h2 {
+    font-size: 5vw;
+    max-width: inherit;
+  }
+}
+@media only screen and (min-width: 993px) {
+  .tracks div.track:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+  }
+}
+.tracks div.track p {
+  max-height: 0px;
+  transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+  overflow: hidden;
+  display: none;
+}
+@media only screen and (max-width: 993px) {
+  .tracks div.track p {
+    display: block;
+  }
+}
+.tracks div.track p.visible {
+  margin-bottom: 50px;
+  max-height: 350px;
+  transition: all 0.5s ease-in-out;
+}
+.tracks div.track.focus {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
 }
 .tracks .background {
   height: 40vw;
   display: block;
   margin: 0 auto;
 }
-.tracks #nessie {
-  left: 10.5%;
-  top: 14.5%;
-}
-@supports (-webkit-touch-callout: none) {
+@media only screen and (min-width: 993px) {
   .tracks #nessie {
+    left: 10.5%;
+    top: 14.5%;
+  }
+  .tracks #nessie img {
+    height: 4.5vw;
+  }
+  .tracks #boatsquatch {
+    top: 48%;
     left: 7%;
-    top: 10%;
   }
-  .tracks #nessie h2 {
-    max-width: 12.5vw;
+  .tracks #boatsquatch img {
+    height: 5.5vw;
   }
-}
-.tracks #nessie img {
-  height: 4.5vw;
-}
-.tracks #boatsquatch {
-  top: 48%;
-  left: 7%;
-}
-.tracks #boatsquatch img {
-  height: 5.5vw;
-}
-.tracks #krakenlake {
-  left: 28.8%;
-  top: 28.5%;
-}
-.tracks #krakenlake img {
-  height: 11.1vw;
-}
-.tracks #krakenlake h2 {
-  position: relative;
-  top: -3.5vw;
-}
-@supports (-webkit-touch-callout: none) {
+  .tracks #krakenlake {
+    left: 28.8%;
+    top: 28.5%;
+  }
+  .tracks #krakenlake img {
+    height: 11.1vw;
+  }
   .tracks #krakenlake h2 {
-    top: -4.8vw;
-    left: -0.5vw;
+    position: relative;
+    top: -3.5vw;
   }
 }
-.tracks #mothman {
-  left: 50%;
-  top: 9.5%;
+@media only screen and (min-width: 993px) and (max-width: 993px) {
+  .tracks #krakenlake h2 {
+    top: 0;
+  }
 }
-@supports (-webkit-touch-callout: none) {
+@media only screen and (min-width: 993px) {
   .tracks #mothman {
-    left: 47%;
+    left: 50%;
+    top: 9.5%;
+  }
+  .tracks #mothman img {
+    height: 7vw;
   }
 }
-.tracks #mothman img {
-  height: 7vw;
-}
-.tracks #yeti {
-  left: 76%;
-  top: 9.5%;
-}
-@supports (-webkit-touch-callout: none) {
+@media only screen and (min-width: 993px) {
   .tracks #yeti {
-    left: 70%;
-    top: 8%;
+    left: 76%;
+    top: 9.5%;
+  }
+  .tracks #yeti img {
+    height: 8vw;
   }
 }
-.tracks #yeti img {
-  height: 8vw;
-}
-.tracks #ram {
-  left: 75%;
-  top: 60%;
-}
-.tracks #ram img {
-  height: 10.5vw;
+@media only screen and (min-width: 993px) {
+  .tracks #ram {
+    left: 75%;
+    top: 60%;
+  }
+  .tracks #ram img {
+    height: 10.5vw;
+  }
 }
 
 .schedule {
@@ -562,12 +587,12 @@ nav ul a:hover::before {
 
 .table-row-odd {
   color: #4f3426;
-  background: #adbf88;
+  background: #F7F2D8;
 }
 
 .table-row-even {
-  color: #F7F2D8;
-  background: #477215;
+  color: #4f3426;
+  background: #E7D8BC;
 }
 
 h3 {
@@ -576,6 +601,8 @@ h3 {
 }
 
 table {
+  font-size: 18px;
+  width: 100%;
   border-collapse: collapse;
   min-width: 100%;
   max-width: 100%;
@@ -613,17 +640,22 @@ th {
 }
 
 .day-selector {
+  font-family: "Quicksand";
   cursor: pointer;
-  flex: 0 1 50%;
-  -webkit-flex: 0 0 50%;
+  width: 33.3%;
   text-align: center;
-  background-color: #adbf88;
-  border: 3px solid #477215;
+  background-color: #F7F2D8;
+  border: 3px solid #E7D8BC;
   color: #4f3426;
   line-height: 1.5em;
-  font-size: 4vh;
+  font-size: 2.5vw;
   margin-top: 10px;
   margin-bottom: 25px;
+}
+@media only screen and (max-width: 993px) {
+  .day-selector {
+    font-size: 5vw;
+  }
 }
 .day-selector:first-child {
   border-top-left-radius: 5px;
@@ -641,13 +673,8 @@ th {
 }
 .day-selector.active {
   transition: background-color 0.15s ease-in-out;
-  background-color: #477215;
-  color: #F7F2D8;
-}
-
-.sch-row {
-  display: flex;
-  display: -webkit-flex;
+  background-color: #E7D8BC;
+  color: #4f3426;
 }
 
 .faq {
@@ -677,6 +704,7 @@ th {
   display: flex;
   margin-bottom: 10px;
   align-items: center;
+  margin-top: 15px;
 }
 @media only screen and (max-width: 993px) {
   #faq-container div h2 {
@@ -686,14 +714,6 @@ th {
 #faq-container div h2 img {
   height: 40px;
   margin-right: 20px;
-}
-#faq-container div p {
-  font-size: 1.2rem;
-}
-@media only screen and (max-width: 993px) {
-  #faq-container div p {
-    font-size: 1.5rem;
-  }
 }
 
 #faq-footer {
@@ -726,31 +746,27 @@ th {
 }
 
 .tier-4 {
-  max-width: 80%;
-  min-width: 280px;
-  max-height: 250px;
+  width: 80%;
+  min-width: 350px;
 }
 
 .tier-3 {
-  max-width: 50%;
-  min-width: 240px;
-  max-height: 180px;
+  width: 40%;
+  min-width: 260px;
 }
 
 .tier-2 {
-  max-width: 30%;
-  min-width: 240px;
-  max-height: 140px;
+  width: 30%;
+  min-width: 180px;
 }
 
 .tier-1 {
-  max-width: 17.5%;
-  min-width: 180px;
-  max-height: 100px;
+  width: 20%;
+  min-width: 125px;
 }
 
 .sponsor-row {
-  margin-bottom: 0;
+  margin-bottom: 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -766,6 +782,7 @@ footer {
   height: 10vh;
   background: #4f3426;
   color: white;
+  font-size: 1.3rem;
 }
 @media only screen and (max-width: 600px) {
   footer {
